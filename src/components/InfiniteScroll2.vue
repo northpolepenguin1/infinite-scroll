@@ -2,6 +2,7 @@
   <div infinite-wrapper>
      <header>Hackers News</header>
       <div v-for="(item, $index) in list" :key="$index">
+        {{ item }}
       </div>
       <infinite-loading @infinite="infiniteHandler"></infinite-loading>
   </div>
